@@ -155,7 +155,9 @@ BOOST_PYTHON_MODULE(rdDepictor) {
   std::string docString;
   docString =
       "Compute 2D coordinates for a molecule. \n\
-  The resulting coordinates are stored on each atom of the molecule \n\n\
+  The resulting coordinates are stored on each atom of the molecule.  \
+  They can be accessed using the GetConformer function on the molecule object, \
+  which returns a Conformer object that stores coordinates for each atom.\n\n\
   ARGUMENTS: \n\n\
      mol - the molecule of interest\n\
      canonOrient - orient the molecule in a canonical way\n\
